@@ -17,6 +17,7 @@ body {
     justify-content: space-between;
     align-content: center;
     padding: 20px 80px;
+    flex-wrap: wrap;
 }
 .logo {
     height: 38px;
@@ -119,7 +120,7 @@ h1 {
 }
 .main_grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(220px, 303px));
+    grid-template-columns: repeat(auto-fill, minmax(220px, 290px));
     grid-template-rows: repeat(5, minmax(200px, 279px));
     grid-gap: 10px;
 }
@@ -277,3 +278,72 @@ li.course_item:last-child {
     padding: 22px 0;
     width: 70%;
 }
+.footer {
+    background: #212121;
+}
+.main_footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 50px 0;
+}
+.company, .links, .contact, .others {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.company_info {
+    padding: 20px 0px 40px 0px;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: 'Montserrat', sans-serif;
+}
+a.link_item, .contact, a.other_item {
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 175.78%;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+}
+a.link_item:first-child, .contact_title {
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+a.soc_item {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+}
+.fb {
+    background: url(../img/fb.svg) 0 0 no-repeat;
+}
+.tw {
+    background: url(../img/tw.svg) 0 0 no-repeat;
+}
+.yt {
+    background: url(../img/yt.svg) 0 0 no-repeat;
+}
+.db {
+    background: url(../img/dr.svg) 0 0 no-repeat;
+}
+.right {
+    background: #000000;
+}
+.rights {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 13px 0;
+}
+span {
+    color: #FFC000;
+}
+@media screen and (max-width: 1028px) {
+    .header_container {
+        flex-direction: column;
+    }
+} 
