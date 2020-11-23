@@ -95,6 +95,7 @@ h1 {
     background: url(../uploads/icons.png) 50% 0 no-repeat;
 }
 .courses {
+    position: relative;
     display: grid;
     grid-template-areas: 
     "search search"
@@ -112,11 +113,9 @@ h1 {
 }
 .panel {
     grid-area: panel;
-    background: yellowgreen;
 }
 .pagination {
     grid-area: pagination;
-    background: violet;
 }
 .main_grid {
     display: grid;
@@ -197,4 +196,84 @@ input::placeholder {
     text-align: justify;
     justify-content: left;
     float: left;
+}
+.pagination {
+    display: inline-block;
+    padding: 155px 0 100px;
+}
+a.pag_item {
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #E0E0E0;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 23px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #535353;
+}
+a.pag_item:hover {
+    background: linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%);
+    color: #ffffff;
+}
+.panel {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 10px 30px;
+    position: absolute;
+    top: -5%;
+    right: 10%;
+}
+.all_courses {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.course_item {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 105.47%;
+    color: #5C5C5C;
+    padding: 10px 0 25px 0;
+}
+li.course_item:first-child {
+    font-size: 18px;
+    line-height: 105.47%;
+    font-weight: bold;
+}
+li.course_item:last-child {
+    font-size: 18px;
+    line-height: 105.47%;
+    font-weight: bold;
+}
+.payments {
+    padding: 28px 0 50px;
+}
+.payment_item {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    border: 1px solid #5C5C5C;
+    padding: 17px 14px;
+    font-size: 11px;
+    line-height: 105.47%;
+    font-family: 'Montserrat', sans-serif;
+    color: #5C5C5C;
+}
+.filter {
+    background: linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%);
+    box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+    border-radius: 100px;
+    pad: 20px 63px;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 22px 0;
+    width: 70%;
 }
